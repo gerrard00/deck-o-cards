@@ -10,7 +10,7 @@ $ npm i deck-o-cards
 ```
 #### Require Locally:
 ```js
-var doc = require('./deck-o-cards')
+var doc = require('deck-o-cards')
 ```
 #### Call Locally:
 ```js
