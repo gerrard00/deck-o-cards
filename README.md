@@ -1,7 +1,7 @@
 # deck-o-cards
 
 
-This Node Package has a single purpose: to return a single deck of 52 playing cards completely randomized. It is then up to you how to use the randomized deck: black jack, poker, gin rummy, guessing games.
+This Node Package has a single purpose: to return a single deck of 52 playing cards completely randomized. It is then up to you how to use the randomized deck: black jack, poker, gin rummy, guessing games. It returns an array of arrays: [[ '♠️Jack', 10 ], [ '♦️9', 9 ], [ '♣️King', 10 ] ...]
 
 ## How To Use
 #### Install it via npm:
@@ -12,7 +12,7 @@ $ npm i deck-o-cards
 ```js
 var doc = require('./deck-o-cards')
 ```
- #### Call Locally:
+#### Call Locally:
 ```js
 var deck = doc.randomizedDeck()
 /*
