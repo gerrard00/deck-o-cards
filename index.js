@@ -1,6 +1,6 @@
 'use strict'
 
-const randomizeDeck = () => {
+const randomizedDeck = () => {
 
   var deck = []
   var currentCard
@@ -9,7 +9,6 @@ const randomizeDeck = () => {
     currentCard = (Math.floor(Math.random() * Math.floor(52))) + 1
     if(deck.indexOf(currentCard) === -1){
       if(currentCard < 14){
-        console.log("❤️")
         if(currentCard === 1){
           deck.push(["❤️Ace", 11])
         }else if(currentCard === 11){
@@ -22,7 +21,6 @@ const randomizeDeck = () => {
           deck.push(["❤️"+currentCard, currentCard])
         }
       }else if(currentCard > 13 && currentCard < 27){
-        console.log("♠️")
         if(currentCard === 14){
           deck.push(["♠️Ace", 11])
         }else if(currentCard === 24){
@@ -35,7 +33,6 @@ const randomizeDeck = () => {
           deck.push(["♠️"+(currentCard - 13), (currentCard - 13)])
         }
       }else if(currentCard > 26 && currentCard < 40){
-        console.log("♦️")
         if(currentCard === 27){
           deck.push(["♦️Ace", 11])
         }else if(currentCard === 37){
@@ -48,7 +45,6 @@ const randomizeDeck = () => {
           deck.push(["♦️"+(currentCard - 26), (currentCard - 26)])
         }
       }else if(currentCard > 41){
-        console.log("♣️")
         if(currentCard === 42){
           deck.push(["♣️Ace", 11])
         }else if(currentCard === 50){
@@ -65,6 +61,9 @@ const randomizeDeck = () => {
   } while (deck.length < 52)
 
   return deck
+
 }
 
-console.log(randomizeDeck())
+module.exports = {
+  randomizedDeck:randomizedDeck
+}
